@@ -37,9 +37,9 @@ const Layout = ({ children }) => {
                     </label>
                     <ul className={style.headerNavList}>
                         <li className={style.headerNavListItem}><Link className={style.headerNavListItemLink} to="/work/">Work</Link></li>
-                        <li className={`${style.headerNavListItem} ${window.location.href.includes("skills") ? style.headerNavListItemCurrent : ""}`}><Link className={style.headerNavListItemLink} to="/skills/">Skills</Link></li>
-                        <li className={`${style.headerNavListItem} ${window.location.href.includes("about") ? style.headerNavListItemCurrent : ""}`}><Link className={style.headerNavListItemLink} to="/about">About</Link></li>
-                        <li className={`${style.headerNavListItem} ${window.location.href.includes("contact") ? style.headerNavListItemCurrent : ""}`}><Link className={style.headerNavListItemLink} to="/contact">Contact</Link></li>
+                        <li className={style.headerNavListItem}><Link className={style.headerNavListItemLink} to="/skills/">Skills</Link></li>
+                        <li className={style.headerNavListItem}><Link className={style.headerNavListItemLink} to="/about">About</Link></li>
+                        <li className={style.headerNavListItem}><Link className={style.headerNavListItemLink} to="/contact">Contact</Link></li>
                     </ul>
                 </nav>
             </header>
