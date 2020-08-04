@@ -1,9 +1,10 @@
 {
-  "name": "gatsby-starter-hello-world",
+  "name": "portfolio",
   "private": true,
-  "description": "A simplified bare-bones starter for Gatsby",
+  "description": "Hi, I'm Lars and I am a digital creative. I love webdesign and -development",
   "version": "0.1.0",
   "license": "0BSD",
+  "author": "Lars Marginet <larsmarginet@yahoo.com>",
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop",
@@ -14,9 +15,26 @@
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
   },
   "dependencies": {
-    "gatsby": "^2.24.26",
+    "contentful-management": "^5.23.0",
+    "gatsby": "^2.20.12",
+    "gatsby-image": "^2.3.1",
+    "gatsby-plugin-manifest": "^2.3.3",
+    "gatsby-plugin-offline": "^3.1.2",
+    "gatsby-plugin-postcss": "^2.3.11",
+    "gatsby-plugin-react-helmet": "^3.2.1",
+    "gatsby-plugin-sharp": "^2.5.3",
+    "gatsby-plugin-use-query-params": "^1.0.1",
+    "gatsby-source-contentful": "^2.2.7",
+    "gatsby-source-filesystem": "^2.2.2",
+    "gatsby-transformer-sharp": "^2.4.3",
+    "lodash": "^4.17.19",
+    "prop-types": "^15.7.2",
+    "querystring": "^0.2.0",
     "react": "^16.12.0",
-    "react-dom": "^16.12.0"
+    "react-dom": "^16.12.0",
+    "react-helmet": "^5.2.1",
+    "shortid": "^2.2.15",
+    "use-query-params": "^1.0.0"
   },
   "devDependencies": {
     "prettier": "2.0.5"
