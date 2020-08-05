@@ -7,6 +7,8 @@ module.exports = {
     title: `Lars M.`,
     description: `The portfolio of Lars Marginet`,
     author: `Lars Marginet`,
+    url: `https://portfolio.larsmarginet.be/`,
+    image: "/banner.jpg"
   },
   plugins: [
     `gatsby-plugin-react-helmet`,

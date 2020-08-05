@@ -1,6 +1,7 @@
 import React, {useState } from "react"
 import { Link } from "gatsby"
 import style from "./layout.module.css"
+import Head from "../shared/head"
 import useDocumentScrollThrottled from '../utils/useDocumentScrollThrottled';
 import logo from "../images/logo.svg"
 import logoFooter from "../images/logoFooter.svg"
@@ -23,6 +24,7 @@ const Layout = ({ children }) => {
     
     return (
         <>
+            <Head />
             <header className={`${style.header} ${shouldHideHeader ? style.hidden : ""}`}>
                 <nav className={style.headerNav}>
                     <Link className={style.headerNavLogo} to="/">
