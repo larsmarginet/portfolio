@@ -17,6 +17,7 @@ html {
 body {
     font-family: 'Montserrat', sans-serif;
     font-size: var(--regular-text);
+    color: var(--blue-color);
 }
 
 .visually-hidden {
@@ -27,4 +28,8 @@ body {
   clip: rect(1px 1px 1px 1px);
   clip: rect(1px,1px,1px,1px);
   white-space: nowrap;
+}
+
+strong {
+  font-weight: 700;
 }

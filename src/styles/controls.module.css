@@ -1,0 +1,15 @@
+.link:after {
+    -webkit-transition: all 0.35s ease;
+    transition: all 0.35s ease;
+    bottom: 0;
+    display: block;
+    height: .3rem;
+    width: 0%;
+    content: "";
+    background-color: var(--red-color);
+} 
+
+.link:hover:after {
+    opacity: 1;
+    width: 100%;
+}

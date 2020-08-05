@@ -42,7 +42,8 @@
 .headerNav .headerNavList {
     clear: both;
     max-height: 0;
-    transition: max-height .2s ease-out;
+    height: 100vh;
+    transition: max-height .3s ease-out;
 }
 
 .headerNav .headerNavMenuIcon {
@@ -133,26 +134,20 @@
     .headerNavListItemLink {
         margin-left: 2rem;
     }
-    /* .headerNavListItemLink:hover {
-        border-bottom: .3rem solid var(--blue-color);
-    } */
 
     .headerNavListItemLink:after {
         -webkit-transition: all 0.35s ease;
         transition: all 0.35s ease;
-    } 
-
-    .headerNavListItemLink:after {
         bottom: 0;
         display: block;
-        height: 3px;
+        height: .3rem;
         width: 0%;
         content: "";
         background-color: var(--blue-color);
-    }
+    } 
 
     .headerNavListItemLink:hover:after,
-    .headerNavListItemCurrent .headerNavListItemLink:after {
+    .headerNavListItemCurrent:after {
         opacity: 1;
         width: 100%;
     }
@@ -231,6 +226,10 @@
     color: var(--red-color);
     text-align: center;
     margin-top: var(--medium-spacer);
+}
+
+.link {
+    composes: link from "../styles/controls.module.css";
 }
 
 @media (min-width: 600px) {
