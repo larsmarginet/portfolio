@@ -51,7 +51,7 @@
 .workTitle {
     font-size: var(--small-title);
     text-align: center;
-    font-weight: bold;
+    font-weight: 700;
     margin: var(--regular-spacer) 0 var(--small-spacer) 0;
 }
 
@@ -133,7 +133,7 @@
 
 .workButton {
     font-size: 2.4rem;
-    font-weight: bold;
+    font-weight: 700;
     padding: var(--extrasmall-spacer) var(--small-spacer);
     text-align: center;
     border: .3rem solid var(--blue-color);
@@ -148,6 +148,24 @@
 .workButton:hover {
     background-color: var(--blue-color);
     color: var(--green-color);
+}
+
+.contact {
+    background-color: var(--red-color);
+}
+
+.contactInnerwrapper {
+    max-width: 96rem;
+    margin: 0 auto;
+    padding: var(--small-spacer) var(--extrasmall-spacer) var(--medium-spacer) var(--extrasmall-spacer);
+}
+
+.contactTitle {
+    font-weight: 700;
+    font-size: var(--small-title);
+    text-align: center;
+    line-height: .9;
+    padding-top: var(--medium-spacer);
 }
 
 @media (min-width: 600px) {
@@ -185,6 +203,10 @@
     .workTitle {
         font-size: var(--medium-title);
     }
+
+    .contactTitle {
+        font-size: var(--medium-title);
+    }
 }
 
 @media (min-width: 960px) {
@@ -218,6 +240,10 @@
     }
 
     .workTitle {
+        font-size: var(--large-title);
+    }
+
+    .contactTitle {
         font-size: var(--large-title);
     }
 }

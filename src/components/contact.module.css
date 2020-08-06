@@ -1,0 +1,65 @@
+.form {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    max-width: 62rem;
+    margin-top: var(--regular-spacer);
+}
+
+.formLabel {
+    font-weight: 700;
+    font-size: 2.4rem;
+}
+
+.formInput {
+    border: .3rem solid var(--blue-color);
+    padding: var(--extrasmall-spacer);
+    background-color: var(--red-color);
+    font-size: 2.4rem;
+    outline: var(--red-color);
+    color: var(--blue-color);
+    resize: none;
+    margin-bottom: var(--regular-spacer);
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Change the white to any color ;) */
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active  {
+    -webkit-box-shadow: 0 0 0 30px var(--red-color) inset !important;
+    -webkit-text-fill-color: var(--blue-color) !important;
+}
+
+.formSubmit {
+    font-size: 2.4rem;
+    font-weight: 700;
+    color: var(--blue-color);
+    padding: var(--extrasmall-spacer) var(--small-spacer);
+    text-align: center;
+    border: .3rem solid var(--blue-color);
+    text-decoration: none;
+    display: inline-block;
+    -webkit-transition: all 0.35s ease;
+    transition: all 0.35s ease;
+    background-color: var(--red-color);
+    cursor: pointer;
+}
+
+.formSubmit:hover {
+    background-color: var(--blue-color);
+    color: var(--red-color);
+}
+
+@media (min-width: 600px) {
+    .formSubmit {
+        align-self: flex-end;
+    }
+}
+
+@media (min-width: 960px) {
+    .form {
+        margin-top: var(--medium-spacer);
+    }
+}

@@ -1,6 +1,7 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
 import Layout from "../components/layout"
+import Contact from "../components/contact"
 import style from "./index.module.css"
 import laptop from "../images/laptop.svg"
 
@@ -53,6 +54,12 @@ const Home = ({ data }) => {
               })}
             </ul>
             <Link className={style.workButton} to="/work/">View more</Link>
+          </div>
+        </section>
+        <section className={style.contact}>
+          <div className={style.contactInnerwrapper}>
+            <h2 className={style.contactTitle}>Don’t be a stranger</h2>
+            <Contact />
           </div>
         </section>
       </Layout>
