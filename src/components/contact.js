@@ -8,25 +8,38 @@ const Contact = () => {
 
     const handleSubmit = e => {
         e.preventDefault();
-        console.log(e);
-        let formData = new FormData();
-        formData.append('name', name);
-        formData.append('email', email);
-        formData.append('message', message);
-        console.log(new URLSearchParams(formData).toString())
-        fetch(e.target.getAttribute('action'), {
-            method: 'POST',
-            headers: {
-              'Accept': 'application/x-www-form-urlencoded;charset=UTF-8',
-              'Content-Type': 'application/x-www-form-urlencoded;charset=UTF-8'
-            },
-            body: new URLSearchParams(formData).toString()
-          })
-          .then(res => {
-            if (res) {
-             console.log(res);
-            }
-          });
+        const form = e.target;
+
+        fetch('/', {
+            method: 'POST', 
+            body: encode({
+                'form-name': form.getAttribute('name'),
+                name: name,
+                email: email,
+                message: message
+            })
+            .then((res) => console.log(res))
+            .catch((error) => console.log(error));
+        })
+        // console.log(e);
+        // let formData = new FormData();
+        // formData.append('name', name);
+        // formData.append('email', email);
+        // formData.append('message', message);
+        // console.log(new URLSearchParams(formData).toString())
+        // fetch(e.target.getAttribute('action'), {
+        //     method: 'POST',
+        //     headers: {
+        //       'Accept': 'application/x-www-form-urlencoded;charset=UTF-8',
+        //       'Content-Type': 'application/x-www-form-urlencoded;charset=UTF-8'
+        //     },
+        //     body: new URLSearchParams(formData).toString()
+        //   })
+        //   .then(res => {
+        //     if (res) {
+        //      console.log(res);
+        //     }
+        //   });
     }
 
     return (
