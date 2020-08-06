@@ -111,7 +111,7 @@
 
 .headerNavListItem {
     text-align: center;
-    font-size: 4rem;
+    font-size: var(--small-title);
     margin-top: 2.4rem;
 }
   
@@ -128,11 +128,11 @@
     }
     .headerNavListItem {
         text-align: center;
-        font-size: 2rem;
+        font-size: var(--regular-text);
         margin-top: 0;
     }
     .headerNavListItemLink {
-        margin-left: 2rem;
+        margin-left: var(--regular-spacer);
     }
 
     .headerNavListItemLink:after {
@@ -157,7 +157,7 @@
         float: right;
         max-height: none;
         height: 6.5rem;
-        margin-top: 2rem;
+        margin-top: var(--regular-spacer);
         padding-top: .5rem;
     }
     .headerNav .headerNavMenuIcon {
@@ -170,20 +170,6 @@
         margin-left: 4rem;
     }
 }
-
-
-
-/* MAIN */
-.main {
-    padding-top: 5.73rem;
-}
-
-@media (min-width: 600px) {
-    .main {
-        padding-top: 9.5rem;
-    }
-}
-
 
 
 /* FOOTER */
@@ -211,8 +197,9 @@
 
 .footerContactLink {
     text-decoration: none;
+    line-height: 1;
+    margin-bottom: var(--extrasmall-spacer);
     color: var(--red-color);
-    line-height: 1.4;
 }
 
 .footerSocials {
@@ -229,7 +216,7 @@
 }
 
 .link {
-    composes: link from "../styles/controls.module.css";
+    composes: linkRed from "../styles/controls.module.css";
 }
 
 @media (min-width: 600px) {

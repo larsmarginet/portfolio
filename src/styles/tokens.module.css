@@ -4,8 +4,12 @@
     --green-color: #00FFB2;
     --extrasmall-spacer: 1rem;
     --small-spacer: 1.6rem;
+    --regular-spacer: 2rem;
     --medium-spacer: 3.6rem;
     --regular-text: 2rem;
+    --small-title: 4rem;
+    --medium-title: 6rem;
+    --large-title: 10rem;
 }
 
 

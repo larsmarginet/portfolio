@@ -1,4 +1,5 @@
-.link:after {
+/* Hoover effect Links */
+.linkRed:after, .linkBlue:after {
     -webkit-transition: all 0.35s ease;
     transition: all 0.35s ease;
     bottom: 0;
@@ -6,10 +7,17 @@
     height: .3rem;
     width: 0%;
     content: "";
-    background-color: var(--red-color);
 } 
 
-.link:hover:after {
+.linkRed:after {
+    background-color: var(--red-color);
+}
+
+.linkBlue:after {
+    background-color: var(--blue-color);
+}
+
+.linkRed:hover:after, .linkBlue:hover:after {
     opacity: 1;
     width: 100%;
 }

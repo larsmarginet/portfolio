@@ -1,3 +1,224 @@
 .intro {
+    padding-top: 5.73rem;
     background-color: var(--red-color);
 }
+
+.introInnerwrapper {
+    max-width: 96rem;
+    margin: 0 auto;
+    padding: var(--small-spacer) var(--extrasmall-spacer) var(--medium-spacer) var(--extrasmall-spacer);
+}
+
+.introInnerwrapper {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+}
+
+.introContentTitle {
+    font-size: var(--small-title);
+    font-weight: 700;
+    padding-top: var(--small-spacer);
+    line-height: 1;
+}
+
+.introImage {
+    width: 80%;
+}
+
+.link {
+    composes: linkBlue from "../styles/controls.module.css";
+    display: inline-block;
+    text-decoration: none;
+    color: var(--blue-color);
+    line-height: 1;
+}
+
+.work {
+    background-color: var(--green-color);
+    min-height: 100vh;
+}
+
+.workInnerwrapper {
+    max-width: 96rem;
+    margin: 0 auto;
+    padding: var(--small-spacer) var(--extrasmall-spacer) var(--medium-spacer) var(--extrasmall-spacer);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.workTitle {
+    font-size: var(--small-title);
+    text-align: center;
+    font-weight: bold;
+    margin: var(--regular-spacer) 0 var(--small-spacer) 0;
+}
+
+.workList {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: var(--extrasmall-spacer);
+}
+
+.workListItemImage {
+    max-width: 100%;
+    display: block;
+}
+
+.workListItemLink {
+    position: relative;
+    display: block;
+    line-height: 0;
+}
+
+.workListItemPicture {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.workListItemOverlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 0%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: var(--blue-color);
+}
+
+.workListItemLink:hover .workListItemOverlay {
+    opacity: 1;
+    height: 100%;
+}
+
+.workListItemOverlayContent {
+    color: var(--green-color);
+    opacity: 1;
+    font-size: 2.4rem;
+    height: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    display: flex;
+    flex-direction: column;
+    line-height: 1.4;
+    padding: 6% 3% 3% 3%;
+    justify-content: space-between;
+}
+
+.workListItemOverlayContentTitle {
+    font-weight: 700;
+    margin-bottom: 3%;
+}
+
+.workListItemOverlayContentButton {
+    justify-self: flex-end; 
+    text-decoration: none;
+    padding: var(--extrasmall-spacer);
+    border: .1rem solid var(--green-color);
+    color: var(--green-color);
+    transition: all .2s ease-out;
+}
+
+.workListItemOverlayContentButton:hover {
+    color: var(--blue-color);
+    background-color: var(--green-color);
+}
+
+.workButton {
+    font-size: 2.4rem;
+    font-weight: bold;
+    padding: var(--extrasmall-spacer) var(--small-spacer);
+    text-align: center;
+    border: .3rem solid var(--blue-color);
+    text-decoration: none;
+    display: inline-block;
+    margin: var(--regular-spacer) auto;
+    max-width: 18rem;
+    -webkit-transition: all 0.35s ease;
+    transition: all 0.35s ease;
+}
+
+.workButton:hover {
+    background-color: var(--blue-color);
+    color: var(--green-color);
+}
+
+@media (min-width: 600px) {
+    .intro {
+        min-height: 100vh;
+        padding-top: 9.5rem;
+    }
+
+    .introInnerwrapper {
+        display: grid;
+        grid-template-columns: repeat(8, 1fr);
+        grid-column-gap: var(--regular-spacer);
+        height: calc(100vh - 10rem);
+        align-items: end;
+    }
+
+    .introContent {
+        grid-column: 1/6;
+        margin-bottom: var(--small-spacer);
+    }
+
+    .introContentTitle {
+        font-size: var(--medium-title);
+        padding-top: 0;
+    }
+
+    .introImage {
+        grid-column: 6/9;   
+    }
+
+    .workList {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .workTitle {
+        font-size: var(--medium-title);
+    }
+}
+
+@media (min-width: 960px) {
+    .intro {
+        padding-top: 9.5rem;
+    }
+
+    .introInnerwrapper {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-column-gap: var(--regular-spacer);
+    }
+
+    .introContent {
+        grid-column: 1/7;
+        margin-bottom: var(--medium-spacer);
+    }
+
+    .introContentTitle {
+        font-size: var(--large-title);
+    }
+
+    .introImage {
+        width: 100%;
+        grid-column: 7/13;
+    }
+
+    .workList {
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: var(--regular-spacer);
+    }
+
+    .workTitle {
+        font-size: var(--large-title);
+    }
+}
+

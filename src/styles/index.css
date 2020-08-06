@@ -18,6 +18,7 @@ body {
     font-family: 'Montserrat', sans-serif;
     font-size: var(--regular-text);
     color: var(--blue-color);
+    line-height: 1.4;
 }
 
 .visually-hidden {
