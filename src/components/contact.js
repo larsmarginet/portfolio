@@ -19,7 +19,7 @@ const Contact = () => {
                 message: message
             })
             .then((res) => console.log(res))
-            .catch((error) => console.log(error));
+            .catch((error) => console.log(error))
         })
         // console.log(e);
         // let formData = new FormData();
