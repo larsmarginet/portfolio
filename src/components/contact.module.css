@@ -19,11 +19,28 @@
     outline: var(--red-color);
     color: var(--blue-color);
     resize: none;
+    width: 100%;
     margin-bottom: var(--regular-spacer);
+    margin-top: -3rem;
     font-family: 'Montserrat', sans-serif;
+    display: block;
 }
 
-/* Change the white to any color ;) */
+.message {
+    position: relative;
+    right: .3rem;
+    display: block;
+    text-align: right;
+    top:  var(--extrasmall-spacer);
+    height: 2.8rem;
+    pointer-events: none;
+}
+
+.message span {
+    background-color: var(--red-color);
+    padding: var(--extrasmall-spacer);
+}
+
 input:-webkit-autofill,
 input:-webkit-autofill:hover, 
 input:-webkit-autofill:focus, 
@@ -50,6 +67,28 @@ input:-webkit-autofill:active  {
 .formSubmit:hover {
     background-color: var(--blue-color);
     color: var(--red-color);
+}
+
+.globalMessage {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    padding: var(--small-spacer);
+    width: 100%;
+    z-index: 1000;
+    animation: disapear  5s forwards;
+    font-weight: 700;
+    line-height: 1.2;
+    text-align: center;
+}
+
+@keyframes disapear {
+    0%   {transform: translateY(-100px);}
+    10%  {transform: translateY(0);}
+    90%  {transform: translateY(0);}
+    100% {transform: translateY(-100px);}
 }
 
 @media (min-width: 600px) {

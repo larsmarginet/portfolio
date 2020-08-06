@@ -18,7 +18,11 @@ body {
     font-family: 'Montserrat', sans-serif;
     font-size: var(--regular-text);
     color: var(--blue-color);
-    line-height: 1.4;
+    line-height: 1.4; 
+}
+
+a:focus, button:focus {
+  outline-color: var(--green-color);
 }
 
 .visually-hidden {
