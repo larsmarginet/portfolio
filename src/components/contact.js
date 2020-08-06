@@ -1,26 +1,37 @@
 import React, { useState } from "react"
 import style from "./contact.module.css"
 
+const encode = (data) => {
+    return Object.keys(data)
+        .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+        .join("&");
+  }
+
+
 const Contact = () => {
     const [name, setName] = useState("");
     const [email, setEmail] = useState("");
     const [message, setMessage] = useState("");
 
+
+    
+
+
     const handleSubmit = e => {
         e.preventDefault();
         const form = e.target;
-
         fetch('/', {
-            method: 'POST', 
+            method: 'POST',
+            headers: { "Content-Type": "application/x-www-form-urlencoded" }, 
             body: encode({
                 'form-name': form.getAttribute('name'),
                 name: name,
                 email: email,
                 message: message
             })
-            .then((res) => console.log(res))
-            .catch((error) => console.log(error))
         })
+        .then((res) => console.log(res))
+        .catch((error) => console.log(error))
         // console.log(e);
         // let formData = new FormData();
         // formData.append('name', name);
