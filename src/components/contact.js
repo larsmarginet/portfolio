@@ -30,7 +30,7 @@ const Contact = () => {
     }
 
     return (
-        <form onSubmit={handleSubmit} className={style.form} name="contact" action="/pages/index" method="POST" netlify-honeypot="bot-field" data-netlify="true">
+        <form onSubmit={handleSubmit} className={style.form} name="contact" action="/" method="POST" netlify-honeypot="bot-field" data-netlify="true">
             <div className="visually-hidden">
                 <label>Don’t fill this out if you're human: <input name="bot-field" /></label>
             </div>
