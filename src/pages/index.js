@@ -6,7 +6,7 @@ import style from "./index.module.css"
 import laptop from "../images/laptop.svg"
 
 const Home = ({ data }) => {
-  const cases = data.allContentfulCase.edges
+  const cases = data.allContentfulCase.edges;
 
   return (
       <Layout>
@@ -45,7 +45,7 @@ const Home = ({ data }) => {
                               })}
                             </ul> 
                             </div>
-                          <p className={style.workListItemOverlayContentButton} to="/work/">View</p>
+                          <p className={style.workListItemOverlayContentButton}>View</p>
                         </div>
                       </div>
                     </Link>

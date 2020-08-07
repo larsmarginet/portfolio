@@ -107,7 +107,10 @@ const Contact = () => {
                     message: "Thanks for your mail!",
                     green: true
                 });
-                setTimeout(() => setGlobalMessage(''), 6000)
+                setTimeout(() => setGlobalMessage({
+                    message: "",
+                    green: false
+                }), 6000)
                 setName('');
                 setEmail('');
                 setMessage('');
@@ -129,7 +132,10 @@ const Contact = () => {
                     message: "Oops... Something went wrong.",
                     green: false
                 });
-                setTimeout(() => setGlobalMessage(''), 6000)
+                setTimeout(() => setGlobalMessage({
+                    message: "",
+                    green: false
+                }), 6000)
                 console.log(error)
             })
         }
