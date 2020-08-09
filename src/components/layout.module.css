@@ -1,3 +1,34 @@
+/* LOGO */
+.logo {
+    position: fixed;
+    z-index: 1001;
+    background-color: var(--red-color);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all .5s ease-in;
+}
+
+.logoAnimation {
+    transition: transform .1s ease-in;
+    width: 30vw;
+    min-width: 20rem;
+    max-width: 40rem;
+}
+
+.logoTransform {
+    transform: translateY(-100vh); 
+    height: 50vh;
+}
+
+.logoTransform .logoAnimation {
+    transform: translateY(+5vh); 
+}
+
+
+
 /* HEADER */
 .header {
     background-color: var(--red-color);

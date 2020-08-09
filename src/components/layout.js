@@ -1,5 +1,7 @@
-import React, {useState } from "react"
+import React, { createRef, useEffect, useState } from "react"
 import { Link } from "gatsby"
+import lottie from "lottie-web"
+import { useStore } from "../hooks/UseStore"
 import style from "./layout.module.css"
 import Head from "../shared/head"
 import useDocumentScrollThrottled from '../utils/useDocumentScrollThrottled';
@@ -7,6 +9,7 @@ import logo from "../images/logo.svg"
 import logoFooter from "../images/logoFooter.svg"
 import logoGithub from "../images/icon-github.svg"
 import logoInstagram from "../images/icon-instagram.svg"
+import animation from "../animations/logo.json"
 
 const Layout = ({ children }) => {
     // Logic that shows the navbar when scrolling up
@@ -21,10 +24,33 @@ const Layout = ({ children }) => {
             setShouldHideHeader(isScrolledDown && isMinimumScrolled);
         }, TIMEOUT_DELAY);
     });
-    
+
+    //Lottie
+    const store = useStore();
+    let animationContainer = createRef();
+    const [loaded, setLoaded ] = useState(false);
+
+    useEffect(() => {
+        if(store.count === 0) {
+        const anim = lottie.loadAnimation({
+            container: animationContainer.current,
+            renderer: "svg",
+            loop: false,
+            autoplay: true,
+            animationData: animation
+        });
+        setTimeout(() => { setLoaded(true); store.setCount() }, 2400);
+        return () => anim.destroy(); 
+        }  
+    }, []);
+  
+
     return (
         <>
             <Head />
+            <div style={store.count !== 0 ? {display: "none"} : null} className={`${style.logo} ${loaded ? style.logoTransform : null}`}>
+                <div className={style.logoAnimation} ref={animationContainer}></div>
+            </div> 
             <header className={`${style.header} ${shouldHideHeader ? style.hidden : ""}`}>
                 <nav className={style.headerNav}>
                     <Link className={style.headerNavLogo} to="/">
