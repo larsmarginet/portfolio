@@ -14,7 +14,7 @@ const Work = ({ data }) => {
           {cases.map(({ node }) => {
             return (
               <article className={style.case} key={node.id}>
-                <Link to="/work/" className={style.caseInnerwrapper}>
+                <Link to={node.slug} className={style.caseInnerwrapper}>
                   <h3 className={style.caseTitle}>{node.title}</h3>
                   <p className={style.caseDescription}>{node.shortDescription.shortDescription}</p>
                   <ul className={style.caseKeywords}>
@@ -25,10 +25,10 @@ const Work = ({ data }) => {
                       })}
                   </ul> 
                   <picture className={style.caseImage}>
-                    <source media="(max-width: 959px)" srcSet={node.mockUp[1].fluid.srcSetWebp} type="image/webp"/>
-                    <source media="(min-width: 960px)" srcSet={node.mockUp[0].fluid.srcSetWebp} type="image/webp"/>
-                    <source media="(max-width: 959px)" srcSet={node.mockUp[1].fluid.srcSet} type="image/jpeg"/> 
-                    <source  media="(min-width: 960px)" srcSet={node.mockUp[0].fluid.srcSet} type="image/jpeg"/>
+                    <source media="(max-width: 959px)" sizes="100vw" srcSet={node.mockUp[1].fluid.srcSetWebp} type="image/webp"/>
+                    <source media="(min-width: 960px)" sizes="50vw" srcSet={node.mockUp[0].fluid.srcSetWebp} type="image/webp"/>
+                    <source media="(max-width: 959px)" sizes="100vw" srcSet={node.mockUp[1].fluid.srcSet} type="image/png"/> 
+                    <source media="(min-width: 960px)" sizes="50vw" srcSet={node.mockUp[0].fluid.srcSet} type="image/png"/>
                     <img className={style.caseImageImg} src={node.mockUp[0].fluid.src} alt={node.title}/>
                   </picture>
                   <p className={style.caseButton}>View case</p>
@@ -55,6 +55,7 @@ export const pageQuery = graphql`
       edges {
         node {
           id
+          slug
           title
           keywords
           shortDescription {

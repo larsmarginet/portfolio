@@ -154,7 +154,7 @@
 
 @media (min-width: 960px) {
     .work {
-        min-height: 100vh;
+        padding-top: 0rem;
     }
 
     .case {

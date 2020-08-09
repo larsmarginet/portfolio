@@ -1,0 +1,423 @@
+.intro {
+    padding-top: 5.73rem;
+    background-color: var(--red-color);
+}
+
+.introInnerwrapper {
+    max-width: 96rem;
+    margin: 0 auto;
+    padding: var(--small-spacer) var(--extrasmall-spacer) var(--medium-spacer) var(--extrasmall-spacer);
+}
+
+.introInfoTitle {
+    font-size: var(--small-subtitle);
+    font-weight: 700;
+    line-height: 1;
+}
+
+.introInfoDescription p {
+    margin: var(--extrasmall-spacer) 0;
+}
+
+.introInfoKeywords {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin : var(--small-spacer) 0 var(--extrasmall-spacer) 0;
+}
+
+.introInfoKeywordsKeyword {
+    margin: 0 var(--extrasmall-spacer) var(--extrasmall-spacer) 0;
+    padding: .5rem var(--extrasmall-spacer);
+    border: .1rem solid var(--blue-color);
+    display: block;
+}
+
+.introInfoSocialsWebsite {
+    font-size: 2.4rem;
+    font-weight: 700;
+    padding: var(--extrasmall-spacer) var(--small-spacer);
+    text-align: center;
+    border: .3rem solid var(--blue-color);
+    text-decoration: none;
+    display: inline-block;
+    width: 100%;
+    -webkit-transition: all 0.35s ease;
+    transition: all 0.35s ease;
+    color: var(--blue-color);
+}
+
+.introInfoSocialsWebsite:hover {
+    background-color: var(--blue-color);
+    color: var(--red-color);
+}
+
+.introInfoSocialsWrapper {
+    display: grid;
+    justify-content: center;
+    grid-column-gap: var(--extrasmall-spacer);
+    grid-auto-flow: column;
+    margin-top: var(--small-spacer);
+}
+
+.introInfoSocialsWrapperLink img {
+    width: 6rem;
+    height: 6rem;
+}
+
+.introInfoSocialsWrapperLinkItem {
+    display: none;
+}
+
+.introInfoStats {
+    margin: var(--small-spacer) 0;
+}
+
+.introInfoStatsCollaborators {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.introInfoStatsCollaboratorsNames {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.introInfoStatsCollaboratorsNamesName {
+    margin-left: var(--extrasmall-spacer);
+}
+
+.introInfoStatsCollaboratorsNamesNameLink {
+    composes: linkBlue from "../styles/controls.module.css";
+    display: inline-block;
+    text-decoration: none;
+    color: var(--blue-color);
+    line-height: 1;
+}
+
+
+.main {
+    background-color: var(--green-color);
+}
+
+.mainInnerwrapper {
+    max-width: 96rem;
+    margin: 0 auto;
+    padding: var(--medium-spacer) var(--extrasmall-spacer) 20rem var(--extrasmall-spacer);
+}
+
+.mainChallengesTitle {
+    font-weight: 700;
+    font-size: var(--small-subtitle);
+    margin-bottom: var(--extrasmall-spacer);
+    line-height: 1;
+}
+
+.mainChallengesList {
+    max-width: 46rem;
+    list-style-type: disc;
+    margin: 0 0 var(--regular-spacer) var(--regular-spacer);
+}
+
+.mainImagePictureImg {
+    width: 100%;
+}
+
+.mainVideoWrapper {
+    padding: 56.25% 0 0 0;
+    position: relative;
+    margin-bottom: var(--small-spacer);
+}
+
+.mainImagesWrapperPictureImg {
+    width: 100%;
+    margin-bottom: .6rem;
+}
+
+.mainFacebookWrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.mainFacebookWrapper iframe {
+    width: 100%;
+    max-width: 46rem;
+    height: 100vw;
+}
+
+.mainColorsWrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.mainColorsWrapperRows {
+    margin: 0 auto;
+}
+
+.mainColorsWrapperColor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: var(--extrasmall-spacer);
+}
+
+.mainColorsWrapperColorCircle {
+    width: 14rem;
+    height: 14rem;
+    border-radius: 50%;
+}
+
+.mainColorsWrapperColorText {
+    font-weight: 700;
+}
+
+.mainColorsTitle {
+    font-weight: 700;
+    font-size: var(--small-subtitle);
+    padding-top: var(--medium-spacer);
+}
+
+.mainTypographyTitle {
+    font-weight: 700;
+    font-size: var(--small-subtitle);
+    padding-top: var(--medium-spacer);
+}
+
+.mainTypographyImages {
+    margin-top: var(--small-spacer);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.mainTypographyImagesImg {
+    display: block;
+    width: 100%;
+    max-width: 35rem;
+    max-height: 40rem;
+    margin-bottom: var(--small-spacer);
+}
+
+.mainTypographyQuote {
+    margin: var(--small-spacer) auto 0 auto;
+    text-align: center;
+    font-weight: 700;
+    max-width: 62rem;
+}
+
+@media (min-width: 378px) {
+    .introImageImg {
+        width: 100%;
+    }
+}
+
+
+@media (min-width: 460px) {
+    .introInfoSocialsWrapper {
+        display: block;
+    }
+
+    .introInfoKeywords {
+        justify-content: flex-start;
+    }
+
+    .introInfoSocialsWrapperLink {
+        display: flex;
+        margin-bottom: var(--extrasmall-spacer);
+        text-decoration: none;
+        color: var(--blue-color);
+        line-height: 1;
+    }
+
+    .introInfoSocialsWrapperLink span {
+        margin-top: .5rem;
+    }
+
+    .introInfoSocialsWrapperLink span:after {
+        -webkit-transition: all 0.35s ease;
+        transition: all 0.35s ease;
+        background-color: var(--blue-color);
+        bottom: 0;
+        display: block;
+        height: .3rem;
+        width: 0%;
+        content: "";
+    }
+
+    .introInfoSocialsWrapperLink span:hover:after {
+        opacity: 1;
+        width: 100%;
+    }
+
+    .introInfoSocialsWrapperLinkItem {
+        display: block;
+        margin-left: var(--extrasmall-spacer);
+    }
+
+    .introInfoSocialsWrapperLink img{
+        width: 3rem;
+        height: 3rem;
+    }
+
+    .mainFacebookWrapper iframe {
+        height: 46rem
+    }
+}
+
+@media (min-width: 600px) {
+    .intro {
+        padding-top: 9.5rem;
+    }
+
+    .introInfo {
+        display: grid;
+        grid-template-columns: 5fr 3fr;
+        grid-column-gap: var(--regular-spacer);
+    }
+
+    .introInfoTitle {
+        grid-column: 1/3;
+        grid-row: 1/2;
+        font-size: var(--medium-subtitle);
+    }
+
+    .introInfoDescription {
+        grid-column: 1/2;
+        grid-row: 2/4;
+        margin-bottom: var(--small-spacer);
+    }
+
+    .introInfoKeywords {
+        grid-column: 2/3;
+        grid-row: 2/3;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .introInfoSocials {
+        grid-column: 1/2;
+        grid-row: 4/5;
+        margin: 0;
+    }
+
+    .introInfoSocialsWebsite {
+        margin-top: var(--small-spacer);
+    }
+
+    .introInfoStats {
+        grid-column: 2/3;
+        grid-row: 3/4;
+        margin: 0;
+    }
+
+    .introImageImg {
+        margin-top: var(--medium-spacer);
+    }
+
+    .mainChallengesTitle {
+        font-size: var(--medium-subtitle);
+    }
+
+    .mainImagesWrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: var(--regular-spacer);
+    }
+
+    .mainColorsWrapperColorCircle {
+        width: 17rem;
+        height: 17rem;
+    }
+
+    .mainColorsWrapperRows {
+        max-width: 74rem;
+    }
+
+    .mainColorsWrapperColorText {
+        font-size: var(--small-subtitle);
+    }
+
+    .mainColorsTitle {
+        padding-top: 10rem;
+        font-size: var(--medium-subtitle);
+    }
+
+    .mainTypographyTitle {
+        padding-top: 10rem;
+        font-size: var(--medium-subtitle);
+    }
+
+    .mainTypographyImages {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 4rem;
+        margin-top: var(--medium-spacer);
+        align-items: end;
+    }
+
+    .mainTypographyImagesImg {
+        max-width: none;
+    }
+
+    .mainTypographyQuote {
+        margin-top: var(--medium-spacer);
+        font-size: var(--small-subtitle);
+        text-align: center;
+        font-weight: 700;
+    }
+}
+
+@media (min-width: 960px) {
+    .intro {
+        overflow: hidden;
+    }
+
+    .introInnerwrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        grid-column-gap: var(--regular-spacer);
+    }
+
+    .introInfo {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .introInfoKeywords {
+        flex-direction: row;
+    }
+
+    .introInfoDescription {
+        margin: 0;
+    }
+
+    .introInfoSocialsWebsite {
+        width: 21rem;
+        margin: 0 0 var(--small-spacer) 0;
+    }
+
+    .introImageImg {
+        transform: scale(1.5);
+        transform-origin: left top;
+        margin-bottom: 12rem;
+    }
+
+    .mainChallengesTitle {
+        font-size: var(--medium-title);
+    }
+
+    .mainColorsWrapperColorCircle {
+        width: 20rem;
+        height: 20rem;
+    }
+
+    .mainColorsTitle {
+        font-size: var(--medium-title);
+    }
+
+    .mainTypographyTitle {
+        font-size: var(--medium-title);
+    }
+}

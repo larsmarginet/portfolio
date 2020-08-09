@@ -24,13 +24,12 @@ const Home = ({ data }) => {
           <div className={style.workInnerwrapper}>
             <h2 className={style.workTitle}>Recent work</h2>
             <ul className={style.workList}>
-              {cases.map(({ node }) => {
-                return (
+              {cases.map(({ node }) => (
                   <li key={node.id} className={style.workListItem}>
-                    <Link to="/work/" className={style.workListItemLink}>
+                    <Link to={`work/${node.slug}/`} className={style.workListItemLink}>
                       <picture className={style.workListItemPicture}>
-                        <source srcSet={node.squareImage.fluid.srcSetWebp} type="image/webp"/>
-                        <source srcSet={node.squareImage.fluid.srcSet} type="image/jpeg"/> 
+                        <source sizes="100vw, (min-width: 600px) 50vw, (min-width: 960px) 460px" srcSet={node.squareImage.fluid.srcSetWebp} type="image/webp"/>
+                        <source sizes="100vw, (min-width: 600px) 50vw, (min-width: 960px) 460px" srcSet={node.squareImage.fluid.srcSet} type="image/jpeg"/> 
                         <img className={style.workListItemImage} src={node.squareImage.fluid.src} alt={node.title}/>
                       </picture>
                       <div className={style.workListItemOverlay}>
@@ -38,11 +37,9 @@ const Home = ({ data }) => {
                           <div>
                             <p className={style.workListItemOverlayContentTitle}>{node.title}</p>
                             <ul>
-                              {node.keywords.map(keyword => {
-                                return (
+                              {node.keywords.map(keyword => (
                                   <li key={keyword}>{keyword}</li>
-                                )  
-                              })}
+                                ))}
                             </ul> 
                             </div>
                           <p className={style.workListItemOverlayContentButton}>View</p>
@@ -50,8 +47,7 @@ const Home = ({ data }) => {
                       </div>
                     </Link>
                   </li>
-                )
-              })}
+                ))}
             </ul>
             <Link className={style.workButton} to="/work/">View more</Link>
           </div>
@@ -76,6 +72,7 @@ export const pageQuery = graphql`
       edges {
         node {
           id
+          slug
           title
           keywords
           squareImage {
