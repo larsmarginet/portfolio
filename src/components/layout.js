@@ -1,7 +1,7 @@
 import React, { createRef, useEffect, useState } from "react"
 import { Link } from "gatsby"
 import lottie from "lottie-web"
-import { useStore } from "../hooks/UseStore"
+import { useStore } from "../hooks/useStore.js"
 import style from "./layout.module.css"
 import Head from "../shared/head"
 import useDocumentScrollThrottled from '../utils/useDocumentScrollThrottled';
