@@ -1,0 +1,34 @@
+.section {
+    height: 100vh;
+    background-color: var(--red-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.sectionTitle {
+    font-weight: 700;
+    font-size: 30vw;
+    line-height: 1;
+}
+
+.sectionLink {
+    color: var(--blue-color);
+    text-decoration: none;
+    border: .3rem solid var(--blue-color);
+    padding: var(--extrasmall-spacer) var(--medium-spacer);
+    margin-top: var(--medium-spacer);
+    transition: all .35s ease-in-out;
+}
+
+.sectionLink:hover {
+    color: var(--red-color);
+    background-color: var(--blue-color);
+}
+
+@media (min-width: 960px) {
+    .sectionTitle {
+        font-size: 40rem;
+    }
+}
