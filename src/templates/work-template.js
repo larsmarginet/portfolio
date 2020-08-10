@@ -76,7 +76,7 @@ const WorkTemplate = ({ data }) => {
                     {work.vimeoId ? 
                         <article className={style.mainVideo}>
                             <h3 style={{display: "none"}}>Video</h3>
-                            <div className={style.mainVideoWrapper}><iframe src={`https://player.vimeo.com/video/${work.vimeoId}?color=F24F5B`} style={{position:"absolute", top:0, left:0, width:"100%", height:"100%"}} frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+                            <div className={style.mainVideoWrapper}><iframe title="vimeo" src={`https://player.vimeo.com/video/${work.vimeoId}?color=F24F5B`} style={{position:"absolute", top:0, left:0, width:"100%", height:"100%"}} frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
                         </article>
                     : null}
                     {work.projectImages ? 
@@ -97,7 +97,7 @@ const WorkTemplate = ({ data }) => {
                         <article className={style.mainFacebook}>
                             <h3 style={{display: "none"}}>Facebook Video</h3>
                             <div className={style.mainFacebookWrapper}>
-                                <iframe src={work.facebookEmbedUrl} width="460" style={{border:"none", overflow:"hidden"}} scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true"></iframe>
+                                <iframe title="facebook" src={work.facebookEmbedUrl} width="460" style={{border:"none", overflow:"hidden"}} scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true"></iframe>
                             </div>
                         </article>
                     : null}

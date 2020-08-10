@@ -42,7 +42,7 @@ const Layout = ({ children }) => {
         setTimeout(() => { setLoaded(true); store.setCount() }, 2400);
         return () => anim.destroy(); 
         }  
-    }, []);
+    }, [store, animationContainer]);
   
 
     return (
