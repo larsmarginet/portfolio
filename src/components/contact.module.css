@@ -3,7 +3,6 @@
     flex-direction: column;
     margin: 0 auto;
     max-width: 62rem;
-    margin-top: var(--regular-spacer);
 }
 
 .formLabel {
@@ -94,11 +93,5 @@ input:-webkit-autofill:active  {
 @media (min-width: 600px) {
     .formSubmit {
         align-self: flex-end;
-    }
-}
-
-@media (min-width: 960px) {
-    .form {
-        margin-top: var(--medium-spacer);
     }
 }

@@ -165,7 +165,7 @@
     font-size: var(--small-title);
     text-align: center;
     line-height: .9;
-    padding-top: var(--medium-spacer);
+    padding: var(--medium-spacer) 0 var(--regular-spacer) 0;
 }
 
 @media (min-width: 600px) {
@@ -245,6 +245,7 @@
 
     .contactTitle {
         font-size: var(--large-title);
+        padding: var(--medium-spacer) 0;
     }
 }
 

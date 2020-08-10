@@ -1,0 +1,79 @@
+.contact {
+    padding-top: 5.73rem;
+    background-color: var(--red-color);
+}
+
+.contactInnerwrapper {
+    max-width: 96rem;
+    margin: 0 auto;
+    padding: var(--small-spacer) var(--extrasmall-spacer) 5rem var(--extrasmall-spacer);
+}
+
+.contactTitle {
+    font-size: var(--small-title);
+    font-weight: 700;
+    text-align: center;
+}
+
+.contactLinks {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: var(--extrasmall-spacer);
+}
+
+.contactLinksLink {
+    text-align: center;
+    display: inline-block;
+    margin-bottom: var(--extrasmall-spacer);
+}
+
+.contactSocials {
+    display: grid;
+    grid-template-columns: repeat(2, var(--medium-spacer));
+    grid-column-gap: var(--extrasmall-spacer);
+    justify-content: center;
+}
+
+.contactSubtitle {
+    font-weight: 700;
+    font-size: var(--small-subtitle);
+    text-align: center;
+    margin-top: var(--medium-spacer);
+}
+
+.link {
+    composes: linkBlue from "../styles/controls.module.css";
+    text-decoration: none;
+    color: var(--blue-color);
+    line-height: 1;
+}
+
+
+@media (min-width: 600px) {
+    .contact {
+        padding-top: 9.5rem;
+    }
+
+    .contactTitle {
+        font-size: var(--medium-title);
+    }
+
+    .contactSubtitle {
+        font-size: var(--medium-subtitle);
+    }
+
+    .contactInnerwrapper {
+        padding: var(--small-spacer) var(--extrasmall-spacer) 8rem var(--extrasmall-spacer);
+    }
+}
+
+@media (min-width: 960px) {
+    .contactTitle {
+        font-size: var(--large-title);
+    }
+
+    .contactSubtitle {
+        font-size: var(--medium-title);
+    }
+}
