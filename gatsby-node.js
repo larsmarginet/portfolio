@@ -28,9 +28,7 @@ exports.createPages = async ({ graphql, actions }) => {
   // Create blog posts pages.
   const cases = result.data.allContentfulCase.edges
 
-  cases.forEach((work, index) => {
-    const previous = index === cases.length - 1 ? null : cases[index + 1].node
-    const next = index === 0 ? null : cases[index - 1].node
+  cases.forEach((work) => {
 
     createPage({
       path: `/work/${work.node.slug}/`,
