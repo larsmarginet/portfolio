@@ -24,7 +24,7 @@ export default function About() {
             </picture>
             <div className={style.introInfo}>
               <h2 className={style.introInfoTitle}>Hi, I’m Lars</h2>
-              <p className={style.introInfoText}>Nice to meet you! I’m a digital creative based in Ghent, Belgium. Next semester will be I will start my last year of studying <strong>Digital Design &amp; Development (<a className={style.link} rel="noreferrer" target="_blank" href="https://www.devine.be/">Devine</a>).</strong></p>
+              <p className={style.introInfoText}>Nice to meet you! I’m a digital creative based in Ghent, Belgium. Next semester, I will start my last year of studying <strong>Digital Design &amp; Development (<a className={style.link} rel="noreferrer" target="_blank" href="https://www.devine.be/">Devine</a>).</strong></p>
             </div>
           </div>
         </section>
@@ -68,7 +68,7 @@ export default function About() {
                 <div className={style.educationListLabelArrow}></div>
                 <div className={style.educationListLabelText}>
                   <div className={style.educationListLabelTextWrapper}>
-                    <p>Sask is the Urban Academy of Fine Arts in Deinze. During the 5 years I attended I was able to develop my creative skills. I learned sketching, but also daring to go out of your comfort zone.</p>
+                    <p>Sask is the Urban Academy of Fine Arts in Deinze. During the 5 years I attended I was able to develop my creative skills. I learned sketching, but also daring to go out of my comfort zone.</p>
                   </div>
                   <a className={style.educationListLabelTextLink} rel="noreferrer" target="_blank" href="https://www.saskdeinze.be/">
                     <img className={`${style.educationListLabelTextLinkImage} ${style.educationListLabelTextLinkImageColor}`} src={saskColor} alt="logo sask"/>
