@@ -18,8 +18,8 @@ export default function About() {
         <section className={style.intro}>
           <div className={style.introInnerwrapper}>
             <picture className={style.introPicture}>
-              <source media="(max-width: 599px)" srcset={reading} type="image/svg+xml"/>
-              <source media="(min-width: 600px)" srcset={trekking} type="image/svg+xml"/>
+              <source media="(max-width: 599px)" srcSet={reading} type="image/svg+xml"/>
+              <source media="(min-width: 600px)" srcSet={trekking} type="image/svg+xml"/>
               <img className={style.introPictureImage} src={trekking} alt="me with a backpack"/>
             </picture>
             <div className={style.introInfo}>

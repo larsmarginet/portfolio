@@ -28,8 +28,8 @@ const Home = ({ data }) => {
                 <li key={node.id} className={style.workListItem}>
                   <Link to={`work/${node.slug}/`} className={style.workListItemLink}>
                     <picture className={style.workListItemPicture}>
-                      <source sizes="100vw, (min-width: 600px) 50vw, (min-width: 960px) 300px" srcSet={node.squareImage.fluid.srcSetWebp} type="image/webp"/>
-                      <source sizes="100vw, (min-width: 600px) 50vw, (min-width: 960px) 300px" srcSet={node.squareImage.fluid.srcSet} type="image/jpeg"/> 
+                      <source sizes="(max-width: 599px) 100vw, (min-width: 600px) 50vw, (min-width: 960px) 300px" srcSet={node.squareImage.fluid.srcSetWebp} type="image/webp"/>
+                      <source sizes="(max-width: 599px) 100vw, (min-width: 600px) 50vw, (min-width: 960px) 300px" srcSet={node.squareImage.fluid.srcSet} type="image/jpeg"/> 
                       <img className={style.workListItemImage} src={node.squareImage.fluid.src} alt={node.title}/>
                     </picture>
                     <div className={style.workListItemOverlay}>

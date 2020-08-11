@@ -48,8 +48,8 @@ const Skills = ({ data }) => {
                         <li key={node.id} className={style.skillsListLabelTextListItem}>
                           <Link to={`work/${node.slug}/`} className={style.skillsListLabelTextListItemLink}>
                             <picture className={style.skillsListLabelTextListItemPicture}>
-                              <source sizes="100vw, (min-width: 600px) 50vw, (min-width: 960px) 300px" srcSet={node.squareImage.fluid.srcSetWebp} type="image/webp"/>
-                              <source sizes="100vw, (min-width: 600px) 50vw, (min-width: 960px) 300px" srcSet={node.squareImage.fluid.srcSet} type="image/jpeg"/> 
+                              <source sizes="(max-width: 599px) 100vw, (min-width: 600px) 50vw, (min-width: 960px) 300px" srcSet={node.squareImage.fluid.srcSetWebp} type="image/webp"/>
+                              <source sizes="(max-width: 599px) 100vw, (min-width: 600px) 50vw, (min-width: 960px) 300px" srcSet={node.squareImage.fluid.srcSet} type="image/jpeg"/> 
                               <img className={style.skillsListLabelTextListItemImage} src={node.squareImage.fluid.src} alt={node.title}/>
                             </picture>
                             <div className={style.skillsListLabelTextListItemOverlay}>
@@ -100,8 +100,8 @@ const Skills = ({ data }) => {
                         <li key={node.id} className={style.skillsListLabelTextListItem}>
                           <Link to={`work/${node.slug}/`} className={style.skillsListLabelTextListItemLink}>
                             <picture className={style.skillsListLabelTextListItemPicture}>
-                              <source sizes="100vw, (min-width: 600px) 50vw, (min-width: 960px) 300px" srcSet={node.squareImage.fluid.srcSetWebp} type="image/webp"/>
-                              <source sizes="100vw, (min-width: 600px) 50vw, (min-width: 960px) 300px" srcSet={node.squareImage.fluid.srcSet} type="image/jpeg"/> 
+                              <source sizes="(max-width: 599px) 100vw, (min-width: 600px) 50vw, (min-width: 960px) 300px" srcSet={node.squareImage.fluid.srcSetWebp} type="image/webp"/>
+                              <source sizes="(max-width: 599px) 100vw, (min-width: 600px) 50vw, (min-width: 960px) 300px" srcSet={node.squareImage.fluid.srcSet} type="image/jpeg"/> 
                               <img className={style.skillsListLabelTextListItemImage} src={node.squareImage.fluid.src} alt={node.title}/>
                             </picture>
                             <div className={style.skillsListLabelTextListItemOverlay}>
@@ -152,8 +152,8 @@ const Skills = ({ data }) => {
                         <li key={node.id} className={style.skillsListLabelTextListItem}>
                           <Link to={`work/${node.slug}/`} className={style.skillsListLabelTextListItemLink}>
                             <picture className={style.skillsListLabelTextListItemPicture}>
-                              <source sizes="100vw, (min-width: 600px) 50vw, (min-width: 960px) 300px" srcSet={node.squareImage.fluid.srcSetWebp} type="image/webp"/>
-                              <source sizes="100vw, (min-width: 600px) 50vw, (min-width: 960px) 300px" srcSet={node.squareImage.fluid.srcSet} type="image/jpeg"/> 
+                              <source sizes="(max-width: 599px) 100vw, (min-width: 600px) 50vw, (min-width: 960px) 300px" srcSet={node.squareImage.fluid.srcSetWebp} type="image/webp"/>
+                              <source sizes="(max-width: 599px) 100vw, (min-width: 600px) 50vw, (min-width: 960px) 300px" srcSet={node.squareImage.fluid.srcSet} type="image/jpeg"/> 
                               <img className={style.skillsListLabelTextListItemImage} src={node.squareImage.fluid.src} alt={node.title}/>
                             </picture>
                             <div className={style.skillsListLabelTextListItemOverlay}>
@@ -204,8 +204,8 @@ const Skills = ({ data }) => {
                         <li key={node.id} className={style.skillsListLabelTextListItem}>
                           <Link to={`work/${node.slug}/`} className={style.skillsListLabelTextListItemLink}>
                             <picture className={style.skillsListLabelTextListItemPicture}>
-                              <source sizes="100vw, (min-width: 600px) 50vw, (min-width: 960px) 300px" srcSet={node.squareImage.fluid.srcSetWebp} type="image/webp"/>
-                              <source sizes="100vw, (min-width: 600px) 50vw, (min-width: 960px) 300px" srcSet={node.squareImage.fluid.srcSet} type="image/jpeg"/> 
+                              <source sizes="(max-width: 599px) 100vw, (min-width: 600px) 50vw, (min-width: 960px) 300px" srcSet={node.squareImage.fluid.srcSetWebp} type="image/webp"/>
+                              <source sizes="(max-width: 599px) 100vw, (min-width: 600px) 50vw, (min-width: 960px) 300px" srcSet={node.squareImage.fluid.srcSet} type="image/jpeg"/> 
                               <img className={style.skillsListLabelTextListItemImage} src={node.squareImage.fluid.src} alt={node.title}/>
                             </picture>
                             <div className={style.skillsListLabelTextListItemOverlay}>
@@ -256,8 +256,8 @@ const Skills = ({ data }) => {
                         <li key={node.id} className={style.skillsListLabelTextListItem}>
                           <Link to={`work/${node.slug}/`} className={style.skillsListLabelTextListItemLink}>
                             <picture className={style.skillsListLabelTextListItemPicture}>
-                              <source sizes="100vw, (min-width: 600px) 50vw, (min-width: 960px) 300px" srcSet={node.squareImage.fluid.srcSetWebp} type="image/webp"/>
-                              <source sizes="100vw, (min-width: 600px) 50vw, (min-width: 960px) 300px" srcSet={node.squareImage.fluid.srcSet} type="image/jpeg"/> 
+                              <source sizes="(max-width: 599px) 100vw, (min-width: 600px) 50vw, (min-width: 960px) 300px" srcSet={node.squareImage.fluid.srcSetWebp} type="image/webp"/>
+                              <source sizes="(max-width: 599px) 100vw, (min-width: 600px) 50vw, (min-width: 960px) 300px" srcSet={node.squareImage.fluid.srcSet} type="image/jpeg"/> 
                               <img className={style.skillsListLabelTextListItemImage} src={node.squareImage.fluid.src} alt={node.title}/>
                             </picture>
                             <div className={style.skillsListLabelTextListItemOverlay}>
@@ -308,8 +308,8 @@ const Skills = ({ data }) => {
                         <li key={node.id} className={style.skillsListLabelTextListItem}>
                           <Link to={`work/${node.slug}/`} className={style.skillsListLabelTextListItemLink}>
                             <picture className={style.skillsListLabelTextListItemPicture}>
-                              <source sizes="100vw, (min-width: 600px) 50vw, (min-width: 960px) 300px" srcSet={node.squareImage.fluid.srcSetWebp} type="image/webp"/>
-                              <source sizes="100vw, (min-width: 600px) 50vw, (min-width: 960px) 300px" srcSet={node.squareImage.fluid.srcSet} type="image/jpeg"/> 
+                              <source sizes="(max-width: 599px) 100vw, (min-width: 600px) 50vw, (min-width: 960px) 300px" srcSet={node.squareImage.fluid.srcSetWebp} type="image/webp"/>
+                              <source sizes="(max-width: 599px) 100vw, (min-width: 600px) 50vw, (min-width: 960px) 300px" srcSet={node.squareImage.fluid.srcSet} type="image/jpeg"/> 
                               <img className={style.skillsListLabelTextListItemImage} src={node.squareImage.fluid.src} alt={node.title}/>
                             </picture>
                             <div className={style.skillsListLabelTextListItemOverlay}>
@@ -494,6 +494,7 @@ export const pageQuery = graphql`
     webdevelopmentSkills: allContentfulSkills(filter: {skills: {in: "webdevelopment"}}) {
       edges {
         node {
+          id
           title
           images {
             file {
@@ -506,6 +507,7 @@ export const pageQuery = graphql`
     appdevelopmentSkills: allContentfulSkills(filter: {skills: {in: "appdevelopment"}}) {
       edges {
         node {
+          id
           title
           images {
             file {
@@ -518,6 +520,7 @@ export const pageQuery = graphql`
     webdesignSkills: allContentfulSkills(filter: {skills: {in: "webdesign"}}) {
       edges {
         node {
+          id
           title
           images {
             file {
@@ -530,6 +533,7 @@ export const pageQuery = graphql`
     uxSkills: allContentfulSkills(filter: {skills: {in: "ux"}}) {
       edges {
         node {
+          id
           title
           images {
             file {
@@ -542,6 +546,7 @@ export const pageQuery = graphql`
     motionSkills: allContentfulSkills(filter: {skills: {in: "motion"}}) {
       edges {
         node {
+          id
           title
           images {
             file {
@@ -554,6 +559,7 @@ export const pageQuery = graphql`
     printSkills: allContentfulSkills(filter: {skills: {in: "print"}}) {
       edges {
         node {
+          id
           title
           images {
             file {
@@ -566,6 +572,7 @@ export const pageQuery = graphql`
     experimentedSkills: allContentfulSkills(filter: {skills: {in: "experimented"}}) {
       edges {
         node {
+          id
           title
           images {
             file {
@@ -578,6 +585,7 @@ export const pageQuery = graphql`
     futureSkills: allContentfulSkills(filter: {skills: {in: "future"}}) {
       edges {
         node {
+          id
           title
           images {
             file {
