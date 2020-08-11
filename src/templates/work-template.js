@@ -133,7 +133,7 @@ const WorkTemplate = ({ data }) => {
                     <ul className={style.moreList}>
                     {related.map(({ node }) => (
                         <li key={node.id} className={style.moreListItem}>
-                        <Link to={`work/${node.slug}/`} className={style.moreListItemLink}>
+                        <Link to={`../${node.slug}/`} className={style.moreListItemLink}>
                             <picture className={style.moreListItemPicture}>
                             <source sizes="100vw, (min-width: 600px) 50vw, (min-width: 960px) 300px" srcSet={node.squareImage.fluid.srcSetWebp} type="image/webp"/>
                             <source sizes="100vw, (min-width: 600px) 50vw, (min-width: 960px) 300px" srcSet={node.squareImage.fluid.srcSet} type="image/jpeg"/> 
