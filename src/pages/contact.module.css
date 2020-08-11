@@ -76,4 +76,8 @@
     .contactSubtitle {
         font-size: var(--medium-title);
     }
+
+    .contactInnerwrapper {
+        padding: var(--medium-spacer) var(--extrasmall-spacer) 15rem var(--extrasmall-spacer);
+    }
 }

@@ -1,0 +1,432 @@
+.skills {
+    padding-top: 5.73rem;
+    background-color: var(--red-color);
+}
+
+.skillsInnerwrapper {
+    max-width: 96rem;
+    margin: 0 auto;
+    padding: var(--medium-spacer) var(--extrasmall-spacer) var(--medium-spacer) var(--extrasmall-spacer);
+}
+
+.skillsTitle {
+    font-weight: 700;
+    font-size: var(--small-title);
+    text-align: center;
+}
+
+.skillsList {
+    position: relative;
+    max-width: 74rem;
+    margin: 0 auto;
+}
+
+.skillsList input[type="checkbox"] {
+    display: none;
+}
+
+.skillsListLabel {
+    display: block;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    height: 5.5rem;
+    padding: .5rem var(--small-spacer);
+    color: var(--blue-color);
+}
+
+.skillsListLabelTitle {
+    font-weight: 700;
+}
+
+.skillsList .skillsListLabelArrow {
+    width: 1rem;
+    height: 1rem;
+    transition: -webkit-transform 0.8s;
+    transition: transform 0.8s;
+    transition: transform 0.8s, -webkit-transform 0.8s;
+    -webkit-transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    border-top: .3rem solid var(--blue-color);
+    border-right: .3rem solid var(--blue-color);
+    float: right;
+    position: relative;
+    top: -1.8rem;
+    right: .5rem;
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+}
+
+ .skillsList input[type="checkbox"]:checked + .skillsListLabel > .skillsListLabelArrow {
+    transition: -webkit-transform 0.8s;
+    transition: transform 0.8s;
+    transition: transform 0.8s, -webkit-transform 0.8s;
+    -webkit-transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    -webkit-transform: rotate(135deg);
+            transform: rotate(135deg);
+}
+
+.skillsList input[type="checkbox"]:checked + .skillsListLabel {
+    display: block;
+    height: 30rem;
+    transition: height 0.8s;
+    -webkit-transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+ .skillsList input[type='checkbox']:not(:checked) + .skillsListLabel {
+    display: block;
+    transition: height 0.8s;
+    height: 5rem;
+    -webkit-transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.skillsListLabelTextList {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: var(--extrasmall-spacer);
+}
+
+.skillsListLabelTextListItem {
+    max-width: 35rem;
+    overflow: hidden;
+}
+
+.skillsListLabelTextListItemImage {
+    max-width: 100%;
+    display: block;
+}
+
+.skillsListLabelTextListItemLink {
+    position: relative;
+    display: block;
+    line-height: 0;
+}
+
+.skillsListLabelTextListItemPicture {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.skillsListLabelTextListItemOverlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 0%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: var(--blue-color);
+    display: none;
+}
+
+.skillsListLabelTextListItemLink:hover .skillsListLabelTextListItemOverlay {
+    opacity: 1;
+    height: 100%;
+}
+
+.skillsListLabelTextListItemOverlayContent {
+    color: var(--green-color);
+    opacity: 1;
+    font-size: 2.4rem;
+    height: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    display: flex;
+    flex-direction: column;
+    line-height: 1.4;
+    padding: 6% 3% 3% 3%;
+    justify-content: space-between;
+}
+
+.skillsListLabelTextListItemOverlayContentTitle {
+    font-weight: 700;
+    margin-bottom: 3%;
+}
+
+.skillsListLabelTextListItemOverlayContentButton {
+    justify-self: flex-end; 
+    text-decoration: none;
+    padding: var(--extrasmall-spacer);
+    border: .1rem solid var(--green-color);
+    color: var(--green-color);
+    transition: all .2s ease-out;
+}
+
+.skillsListLabelTextListItemOverlayContentButton:hover {
+    color: var(--blue-color);
+    background-color: var(--green-color);
+}
+
+.skillsListLabelTextSkills {
+    display: flex;
+    align-items: center;
+    margin: .5rem 0 var(--small-spacer) 0;
+}
+
+.skillsListLabelTextSkillsItem {
+    display: grid;
+    margin-top: var(--small-spacer);
+    justify-content: center;
+    align-items: center;
+    margin-right: var(--extrasmall-spacer);
+}
+
+.skillsListLabelTextSkillsItemImage {
+    grid-row: 1/2;
+    grid-column: 1/2;
+    transition: transform .3s ease-in;
+    width: 100%;
+}
+
+.skillsListLabelTextSkillsItemImageColor {
+    opacity: 0;
+    transition: all .3s ease-in;
+}
+
+.skillsListLabelTextSkillsItemImageBlue {
+    opacity: 1;
+    transition: all .3s ease-in;
+}
+
+.skillsListLabelTextSkillsItem:hover .skillsListLabelTextSkillsItemImageBlue {
+    opacity: 0;
+}
+
+.skillsListLabelTextSkillsItem:hover .skillsListLabelTextSkillsItemImageColor {
+    opacity: 1;
+}
+
+.skillsListLabelTextSkillsItem:hover .skillsListLabelTextSkillsItemImage {
+    transform: scale(1.1);
+}
+
+.skillsListLabelTextEmpty {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: var(--extrasmall-spacer);
+}
+
+.skillsListLabelTextEmptyItem {
+    background-color: var(--blue-color);
+    color: var(--red-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: var(--small-spacer);
+    width: 100%;
+    opacity: .8;
+}
+
+.skillsListLabelTextEmptyItem:after {
+    content: "";
+    display: block;
+    padding-bottom: 100%;
+  }
+
+.skillsListLabelTextEmptyItemText {
+    text-align: center;
+    font-weight: 700;
+}
+
+.other {
+    background-color: var(--green-color);
+}
+
+.otherInnerwrapper {
+    max-width: 96rem;
+    margin: 0 auto;
+    padding: var(--medium-spacer) var(--extrasmall-spacer) var(--medium-spacer) var(--extrasmall-spacer);
+}
+
+.otherTitle {
+    font-weight: 700;
+    text-align: center;
+    line-height: 1;
+    font-size: var(--small-title);
+}
+
+.otherSkills {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: var(--small-spacer);
+}
+
+.otherSkillsItem {
+    display: grid;
+    margin-top: var(--small-spacer);
+    justify-content: center;
+    align-items: center;
+    margin: 0 var(--small-spacer);
+}
+
+
+.otherSkillsItemImage {
+    grid-row: 1/2;
+    grid-column: 1/2;
+    transition: transform .3s ease-in;
+    width: 100%;
+}
+
+.otherSkillsItemImageColor {
+    opacity: 0;
+    transition: all .3s ease-in;
+}
+
+.otherSkillsItemImageBlue {
+    opacity: 1;
+    transition: all .3s ease-in;
+}
+
+.otherSkillsItem:hover .otherSkillsItemImageBlue {
+    opacity: 0;
+}
+
+.otherSkillsItem:hover .otherSkillsItemImageColor {
+    opacity: 1;
+}
+
+.otherSkillsItem:hover .otherSkillsItemImage {
+    transform: scale(1.1);
+}
+
+.contact {
+    background-color: var(--red-color);
+}
+
+.contactInnerwrapper {
+    max-width: 96rem;
+    margin: 0 auto;
+    padding: var(--small-spacer) var(--extrasmall-spacer) var(--medium-spacer) var(--extrasmall-spacer);
+}
+
+.contactTitle {
+    font-weight: 700;
+    font-size: var(--small-title);
+    text-align: center;
+    line-height: .9;
+    padding: var(--medium-spacer) 0 var(--regular-spacer) 0;
+}
+
+@media (min-width: 400px) {
+    .skillsListLabelTitle {
+        font-size: var(--small-subtitle);
+    }
+
+    .skillsList .skillsListLabelArrow {
+        top: -2.5rem;
+    }
+
+    .skillsList input[type="checkbox"]:checked + .skillsListLabel {
+        height: 40rem;
+    }
+}
+
+@media (min-width: 500px) {
+    .skillsList input[type="checkbox"]:checked + .skillsListLabel {
+        height: 46rem;
+    }
+}
+
+@media (min-width: 600px) {
+    .skills {
+        padding-top: 9.5rem;
+    }
+
+    .skillsInnerwrapper {
+        padding: var(--medium-spacer) var(--extrasmall-spacer) 8rem var(--extrasmall-spacer);
+    }
+
+    .skillsTitle {
+        font-size: var(--medium-title);
+    }
+
+    .skillsListLabelTextListItemOverlayContentTitle {
+        margin-bottom: 0;
+    }
+
+    .skillsListLabelTextListItemOverlay {
+        display: block;
+    }
+
+    .skillsList input[type="checkbox"]:checked + .skillsListLabel {
+        height: 49rem;
+    }
+
+    .otherTitle {
+        font-size: var(--medium-title);
+    }
+
+    .otherInnerwrapper {
+        padding: var(--medium-spacer) var(--extrasmall-spacer) 5rem var(--extrasmall-spacer);
+    }
+
+    .otherInnerwrapperLast {
+        padding: 5rem var(--extrasmall-spacer) 12rem var(--extrasmall-spacer);
+    }
+
+    .contactTitle {
+        font-size: var(--medium-title);
+    }
+
+    .contactInnerwrapper {
+        padding: var(--small-spacer) var(--extrasmall-spacer) 10rem var(--extrasmall-spacer);
+    }
+}
+
+@media (min-width: 660px) {
+    .skillsListLabelTextListItemOverlayContentTitle {
+        margin-bottom: var(--extrasmall-spacer);
+    }
+
+    .skillsList input[type="checkbox"]:checked + .skillsListLabel {
+        height: 53rem;
+    }
+}
+
+@media (min-width: 740px) {
+    .skillsListLabelTextListItemOverlayContentTitle {
+        margin-bottom: var(--extrasmall-spacer);
+    }
+
+    .skillsList input[type="checkbox"]:checked + .skillsListLabel {
+        height: 55rem;
+    }
+}
+
+@media (min-width: 960px) {
+    .skills {
+        min-height: 100vh;
+    }
+
+    .skillsTitle {
+        font-size: var(--large-title)
+    }
+
+    .otherTitle {
+        font-size: var(--large-title);
+    }
+
+    .otherInnerwrapper {
+        padding: 5rem var(--extrasmall-spacer) 8rem var(--extrasmall-spacer);
+    }
+
+    .otherInnerwrapperLast {
+        padding: 5rem var(--extrasmall-spacer) 16rem var(--extrasmall-spacer);
+    }
+
+    .contactTitle {
+        font-size: var(--large-title);
+        padding: var(--medium-spacer) 0;
+    }
+
+    .contactInnerwrapper {
+        padding: var(--medium-spacer) var(--extrasmall-spacer) 15rem var(--extrasmall-spacer);
+    }
+}

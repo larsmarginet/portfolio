@@ -73,8 +73,8 @@
     transition: transform 0.8s;
     transition: transform 0.8s, -webkit-transform 0.8s;
     -webkit-transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
-    border-top: .2rem solid var(--blue-color);
-    border-right: .2rem solid var(--blue-color);
+    border-top: .3rem solid var(--blue-color);
+    border-right: .3rem solid var(--blue-color);
     float: right;
     position: relative;
     top: -2.5rem;
@@ -113,9 +113,6 @@
 
 .educationListLabelTextLink {
     display: grid;
-}
-
-.educationListLabelTextLink {
     margin-top: var(--small-spacer);
 }
 
@@ -296,9 +293,7 @@
     }
 
     .contactInnerwrapper {
-        max-width: 96rem;
-        margin: 0 auto;
-        padding: var(--small-spacer) var(--extrasmall-spacer) 8rem var(--extrasmall-spacer);
+        padding: var(--small-spacer) var(--extrasmall-spacer) 10rem var(--extrasmall-spacer);
     }
 }
 
@@ -359,9 +354,10 @@
 
     .contactTitle {
         font-size: var(--large-title);
+        padding: var(--medium-spacer) 0;
     }
 
-    .contact {
-        padding-top: 8rem;
+    .contactInnerwrapper {
+        padding: var(--medium-spacer) var(--extrasmall-spacer) 15rem var(--extrasmall-spacer);
     }
 }

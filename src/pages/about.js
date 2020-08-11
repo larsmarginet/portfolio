@@ -33,7 +33,7 @@ export default function About() {
             <h2 className={style.educationTitle}>Education</h2>
             <div className={style.educationList}>
               <input className={style.educationListInput} id="devine" type="checkbox"/>
-              <label className={style.educationListLabel} for="devine">
+              <label className={style.educationListLabel} htmlFor="devine">
                 <p className={style.educationListLabelTitle}>DEVINE</p>
                 <div className={style.educationListLabelArrow}></div>
                 <div className={style.educationListLabelText}>
@@ -49,7 +49,7 @@ export default function About() {
                 </div>
               </label>
               <input className={style.educationListInput} id="viso" type="checkbox"/>
-              <label className={style.educationListLabel} for="viso">
+              <label className={style.educationListLabel} htmlFor="viso">
                 <p className={style.educationListLabelTitle}>VISO</p>
                 <div className={style.educationListLabelArrow}></div>
                 <div className={style.educationListLabelText}>
@@ -63,7 +63,7 @@ export default function About() {
                 </div>
               </label>
               <input className={style.educationListInput} id="sask" type="checkbox"/>
-              <label className={style.educationListLabel} for="sask">
+              <label className={style.educationListLabel} htmlFor="sask">
                 <p className={style.educationListLabelTitle}>SASK</p>
                 <div className={style.educationListLabelArrow}></div>
                 <div className={style.educationListLabelText}>

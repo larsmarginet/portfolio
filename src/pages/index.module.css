@@ -207,6 +207,10 @@
     .contactTitle {
         font-size: var(--medium-title);
     }
+
+    .contactInnerwrapper {
+        padding: var(--small-spacer) var(--extrasmall-spacer) 10rem var(--extrasmall-spacer);
+    }
 }
 
 @media (min-width: 960px) {
@@ -246,6 +250,10 @@
     .contactTitle {
         font-size: var(--large-title);
         padding: var(--medium-spacer) 0;
+    }
+
+    .contactInnerwrapper {
+        padding: var(--medium-spacer) var(--extrasmall-spacer) 15rem var(--extrasmall-spacer);
     }
 }
 
