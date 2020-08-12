@@ -98,7 +98,7 @@ const Skills = ({ data }) => {
                     <ul className={style.skillsListLabelTextList}>
                       {appdevelopmentCases.map(({ node }) => (
                         <li key={node.id} className={style.skillsListLabelTextListItem}>
-                          <Link to={`work/${node.slug}/`} className={style.skillsListLabelTextListItemLink}>
+                          <Link to={`../work/${node.slug}/`} className={style.skillsListLabelTextListItemLink}>
                             <picture className={style.skillsListLabelTextListItemPicture}>
                               <source sizes="(max-width: 599px) 100vw, (min-width: 600px) 50vw, (min-width: 960px) 300px" srcSet={node.squareImage.fluid.srcSetWebp} type="image/webp"/>
                               <source sizes="(max-width: 599px) 100vw, (min-width: 600px) 50vw, (min-width: 960px) 300px" srcSet={node.squareImage.fluid.srcSet} type="image/jpeg"/> 
@@ -150,7 +150,7 @@ const Skills = ({ data }) => {
                     <ul className={style.skillsListLabelTextList}>
                       {webdesignCases.map(({ node }) => (
                         <li key={node.id} className={style.skillsListLabelTextListItem}>
-                          <Link to={`work/${node.slug}/`} className={style.skillsListLabelTextListItemLink}>
+                          <Link to={`../work/${node.slug}/`} className={style.skillsListLabelTextListItemLink}>
                             <picture className={style.skillsListLabelTextListItemPicture}>
                               <source sizes="(max-width: 599px) 100vw, (min-width: 600px) 50vw, (min-width: 960px) 300px" srcSet={node.squareImage.fluid.srcSetWebp} type="image/webp"/>
                               <source sizes="(max-width: 599px) 100vw, (min-width: 600px) 50vw, (min-width: 960px) 300px" srcSet={node.squareImage.fluid.srcSet} type="image/jpeg"/> 
@@ -202,7 +202,7 @@ const Skills = ({ data }) => {
                     <ul className={style.skillsListLabelTextList}>
                       {uxCases.map(({ node }) => (
                         <li key={node.id} className={style.skillsListLabelTextListItem}>
-                          <Link to={`work/${node.slug}/`} className={style.skillsListLabelTextListItemLink}>
+                          <Link to={`../work/${node.slug}/`} className={style.skillsListLabelTextListItemLink}>
                             <picture className={style.skillsListLabelTextListItemPicture}>
                               <source sizes="(max-width: 599px) 100vw, (min-width: 600px) 50vw, (min-width: 960px) 300px" srcSet={node.squareImage.fluid.srcSetWebp} type="image/webp"/>
                               <source sizes="(max-width: 599px) 100vw, (min-width: 600px) 50vw, (min-width: 960px) 300px" srcSet={node.squareImage.fluid.srcSet} type="image/jpeg"/> 
@@ -254,7 +254,7 @@ const Skills = ({ data }) => {
                     <ul className={style.skillsListLabelTextList}>
                       {motionCases.map(({ node }) => (
                         <li key={node.id} className={style.skillsListLabelTextListItem}>
-                          <Link to={`work/${node.slug}/`} className={style.skillsListLabelTextListItemLink}>
+                          <Link to={`../work/${node.slug}/`} className={style.skillsListLabelTextListItemLink}>
                             <picture className={style.skillsListLabelTextListItemPicture}>
                               <source sizes="(max-width: 599px) 100vw, (min-width: 600px) 50vw, (min-width: 960px) 300px" srcSet={node.squareImage.fluid.srcSetWebp} type="image/webp"/>
                               <source sizes="(max-width: 599px) 100vw, (min-width: 600px) 50vw, (min-width: 960px) 300px" srcSet={node.squareImage.fluid.srcSet} type="image/jpeg"/> 
@@ -306,7 +306,7 @@ const Skills = ({ data }) => {
                     <ul className={style.skillsListLabelTextList}>
                       {printCases.map(({ node }) => (
                         <li key={node.id} className={style.skillsListLabelTextListItem}>
-                          <Link to={`work/${node.slug}/`} className={style.skillsListLabelTextListItemLink}>
+                          <Link to={`../work/${node.slug}/`} className={style.skillsListLabelTextListItemLink}>
                             <picture className={style.skillsListLabelTextListItemPicture}>
                               <source sizes="(max-width: 599px) 100vw, (min-width: 600px) 50vw, (min-width: 960px) 300px" srcSet={node.squareImage.fluid.srcSetWebp} type="image/webp"/>
                               <source sizes="(max-width: 599px) 100vw, (min-width: 600px) 50vw, (min-width: 960px) 300px" srcSet={node.squareImage.fluid.srcSet} type="image/jpeg"/> 
