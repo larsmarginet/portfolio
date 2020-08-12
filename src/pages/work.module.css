@@ -103,8 +103,10 @@
     .caseInnerwrapper {
         display: grid;
         grid-template-columns: 5fr 3fr;
+        grid-template-rows: auto minmax(6rem,18rem) minmax(6rem, 9rem) minmax(4rem, 12rem) 5.4rem 10rem;
         grid-column-gap: var(--regular-spacer);
         justify-items: start;
+        min-height: 90rem;
     }
 
     .caseTitle {
