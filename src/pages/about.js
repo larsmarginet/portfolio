@@ -96,7 +96,7 @@ export default function About() {
               <img className={style.hobbiesHobbyImage} src={trekking} alt="me reading a book"/>
               <div className={style.hobbiesHobbyInfo}>
                 <h3 className={style.hobbiesHobbyInfoTitle}>Trekking</h3>
-                <p className={style.hobbiesHobbyInfoText}>From a young age I felt attracted to nature. As a kid we went camping, and as a teenager I went on my first Trekking. Now I am a guide in <strong><a rel="noreferrer" target="_blank" href="https://www.drakkar.be/" className={style.link}>Drakker.</a> </strong> We organize youth holidays in Norway and Sweden, where we go hiking, kayaking, etc.</p>
+                <p className={style.hobbiesHobbyInfoText}>From a young age I felt attracted to nature. As a kid we went camping, and as a teenager I went on my first Trekking. Now I am a guide in <strong><a rel="noreferrer" target="_blank" href="https://www.drakkar.be/" className={style.link}>Drakkar.</a> </strong> We organize youth holidays in Norway and Sweden, where we go hiking, kayaking, etc.</p>
               </div>
             </div>
           </article>
